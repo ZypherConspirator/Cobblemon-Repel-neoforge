@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GCG",
+    "GRG",
+    "GCG"
+  ],
+  "key": {
+    "R": {
+      "item": "repelreforged:repel_block"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "C": {
+      "item": "cobblemon:relic_coin_pouch"
+    }
+  },
+  "result": {
+    "id": "repelreforged:repel_block_1"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "block.repelreforged.repel_block": "Отпугиватель Покемонов",
+  "block.repelreforged.repel_block_1": "Супер Отпугиватель Покемонов",
+  "block.repelreforged.repel_block_2": "Максимальный Отпугиватель Покемонов",
+  "message.repelreforged.repel_tooltip": "Предотвращает появление покемонов в %s блоках. %s",
+  "message.repelreforged.in_chunk": "(%sx%s чанков)",
+  "message.repelreforged.repel_right_click_tooltip": "Правый клик по воздуху проверит есть ли рядом стоящие Отпугиватели",
+  "message.repelreforged.nearby_message": "Рядом уже есть Отпугиватель (Не ставьте  их пожалуйста рядом)",
+  "message.repelreforged.not_found_message": "Нет Отпугивателей рядом"
+}

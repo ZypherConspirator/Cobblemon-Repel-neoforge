@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DED",
+    "DRD",
+    "DCD"
+  ],
+  "key": {
+    "R": {
+      "item": "repelreforged:repel_block_1"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "C": {
+      "item": "cobblemon:relic_coin_sack"
+    }
+  },
+  "result": {
+    "id": "repelreforged:repel_block_2"
+  }
+}
