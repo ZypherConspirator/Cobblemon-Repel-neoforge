@@ -1,4 +1,4 @@
-![cobblemon repel neoreforged](https://cdn.modrinth.com/data/cached_images/5ed51d2067c95ff71b103ebb8e6dc46bec06f0ab.png) <br>Also you can download from [Modrinth.](https://www.example.com) <br> (Thanks to the original author [deuli](https://modrinth.com/user/deuli) for this wonderful [mod](https://modrinth.com/mod/cobblemon-repel) on Fabric!) <br>
+![cobblemon repel neoreforged](https://cdn.modrinth.com/data/cached_images/5ed51d2067c95ff71b103ebb8e6dc46bec06f0ab.png) <br>Also you can download from [Modrinth.](https://modrinth.com/mod/cobblemon-repel-neoreforged) <br> (Thanks to the original author [deuli](https://modrinth.com/user/deuli) for this wonderful [mod](https://modrinth.com/mod/cobblemon-repel) on Fabric!) <br>
 
 Cobblemon Repel NeoReforged is addon for [Cobblemon](https://www.example.com) that adds 3 new blocks that prevent Pokemon spawns in configurable radius. This mod is client-server side! 
 <details>
