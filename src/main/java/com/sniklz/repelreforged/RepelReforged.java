@@ -75,7 +75,6 @@ public class RepelReforged {
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
-
         CobblemonEvents.POKEMON_ENTITY_SPAWN.subscribe(Priority.HIGHEST, event -> {
             ServerLevel world = event.getCtx().getWorld();
 
