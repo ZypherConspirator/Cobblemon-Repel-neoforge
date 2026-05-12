@@ -14,6 +14,7 @@ import java.util.List;
 import com.sniklz.repelreforged.RepelReforged;
 
 public class RepelBlockItem extends BlockItem {
+    @SuppressWarnings("unused")
     private final String repelType;
     public static int RANGE;
     private final int BlockLevel;

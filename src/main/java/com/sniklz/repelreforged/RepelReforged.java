@@ -2,11 +2,8 @@ package com.sniklz.repelreforged;
 
 import com.cobblemon.mod.common.api.Priority;
 import com.cobblemon.mod.common.api.events.CobblemonEvents;
-import com.cobblemon.mod.common.api.events.cooking.PokeSnackSpawnPokemonEvent;
 import com.cobblemon.mod.common.api.spawning.position.FishingSpawnablePosition;
 import com.cobblemon.mod.common.api.spawning.position.SpawnablePosition;
-import com.cobblemon.mod.common.block.PokeSnackBlock;
-import com.cobblemon.mod.common.block.entity.PokeSnackBlockEntity;
 import com.sniklz.repelreforged.block.ModBlocks;
 import com.sniklz.repelreforged.block.custom.RepelBlock;
 import com.sniklz.repelreforged.item.ModItems;
