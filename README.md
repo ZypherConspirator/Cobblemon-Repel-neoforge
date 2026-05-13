@@ -27,3 +27,12 @@ now have gamerule for;
 - **Pokesnacks spawn** are excluded by repel (intentional feature, i dont want to waste time waiting all day)
 - **crouch+right-click** a repel will show a radius in particles. (will improve later,it works fine but radius is usually too large anyways to be seen)
 - removed support for **Cobblemon Spawn Notification**
+
+### how it works
+---
+1. subscribes to CobblemonEvents.POKEMON_ENTITY_SPAWN
+2. checks get SpawnablePosition()
+3. gathers variables from GetSpawner()
+4. if the this event **isnt** cancelled, repel range is 0, PokeFishingSpawn or Spawned via Pokesnacks, proceed to Checking if Repel is Nearby
+5. if Repel is Nearby then cancel spawn, error fallback is allowing the pokemon to spawn.
+6. Mixin of ServerLevel is also there to cover Spawns outside the normal means of Cobblemon.(Pokebosses, etc.), this has ignore checks if it has UUID (usually player owned) and if it has crumb aspect (Pokesnack related)
