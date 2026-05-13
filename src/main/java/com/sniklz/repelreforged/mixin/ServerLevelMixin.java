@@ -16,15 +16,10 @@ public class ServerLevelMixin
     @Inject(method = "addFreshEntity", at = @At("HEAD"), cancellable = true)
     private void cobblemonrepel$checkRepelOnSpawn(Entity entity, CallbackInfoReturnable<Boolean> cir) 
     {
-        if (!(entity instanceof PokemonEntity pokemonEntity))
-        {
-            return;
-        }
-        if (pokemonEntity.getPokemon().getOwnerUUID() != null) 
-        {
-            return;
-        }
-        if (pokemonEntity.getPokemon().getAspects().contains("poke_snack_crumbed")) 
+        if (!(entity instanceof PokemonEntity pokemonEntity) || 
+        pokemonEntity.getPokemon().getOwnerUUID() != null ||
+        pokemonEntity.getPokemon().getAspects().contains("poke_snack_crumbed") ||
+        pokemonEntity.getPokemon().isUncatchable())
         {
             return;
         }

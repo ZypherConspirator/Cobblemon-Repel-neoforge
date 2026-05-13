@@ -4,6 +4,7 @@ import com.cobblemon.mod.common.api.Priority;
 import com.cobblemon.mod.common.api.events.CobblemonEvents;
 import com.cobblemon.mod.common.api.spawning.position.FishingSpawnablePosition;
 import com.cobblemon.mod.common.api.spawning.position.SpawnablePosition;
+import com.cobblemon.mod.common.entity.pokemon.PokemonEntity;
 import com.sniklz.repelreforged.block.ModBlocks;
 import com.sniklz.repelreforged.block.custom.RepelBlock;
 import com.sniklz.repelreforged.item.ModItems;
@@ -109,11 +110,15 @@ public class RepelReforged {
         CobblemonEvents.POKEMON_ENTITY_SPAWN.subscribe(Priority.HIGHEST, event -> {
             SpawnablePosition spawnablePosition = event.getSpawnablePosition();
             ServerLevel world = spawnablePosition.getWorld();
+            PokemonEntity Pokemon = event.getEntity();
             // Only skip fishing spawns, Pokesnack spawns and the gamerule kill-switch.
             // CobbleBosses spawns bypass this event entirely and are handled by ServerWorldMixin instead.
             String causeName = spawnablePosition.getSpawner().getInfluences().stream().map(influence -> influence.getClass().getSimpleName()).collect(Collectors.joining(", "));
             //RepelReforged.LOGGER.info("Spawn Cause: " + causeName);
-            if (event.isCanceled() || world.getGameRules().getInt(REPEL_RANGE) == 0 || spawnablePosition instanceof FishingSpawnablePosition || causeName.contains("PokeSnackBlockEntity")) 
+            if (event.isCanceled() || 
+            world.getGameRules().getInt(REPEL_RANGE) == 0 ||
+            spawnablePosition instanceof FishingSpawnablePosition || Pokemon.isUncatchable() ||
+            causeName.contains("PokeSnackBlockEntity")) 
             {
                 return Unit.INSTANCE;
             }
